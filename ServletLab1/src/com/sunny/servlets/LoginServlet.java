@@ -18,7 +18,7 @@ public class LoginServlet extends HttpServlet implements Servlet {
 		String pwd=request.getParameter("password");
 		String msg="";
 		
-		//Processing Client Data 
+		//Processing Client Data  of servlet
 		if(unm.equals(pwd)){
 			msg="<h1>Login Success <br/>Welcome To Sunny's Home Page</h1>";
 		}
