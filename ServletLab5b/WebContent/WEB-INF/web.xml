@@ -1,0 +1,56 @@
+<web-app>
+  <display-name>ServletLab5</display-name>
+  
+  
+  <context-param>
+  	<param-name>website</param-name>
+  	<param-value>www.gate.com</param-value>
+  </context-param>
+  
+  
+  
+  
+  <servlet>
+  <servlet-name>helloServ</servlet-name>
+  <servlet-class>com.sunny.servlets.HelloServlet</servlet-class>
+  
+  <init-param>
+  
+  <param-name>Registration Process</param-name>
+  <param-value>Gate 2018</param-value>
+  
+  </init-param>
+  <load-on-startup>12</load-on-startup>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>helloServ</servlet-name>
+  <url-pattern>/register.com</url-pattern>
+  
+  </servlet-mapping>
+  
+
+
+  <servlet>
+  <servlet-name>haiServ</servlet-name>
+  <servlet-class>com.sunny.servlets.HaiServlet</servlet-class>
+  
+  <init-param>
+  
+  <param-name>Login</param-name>
+  <param-value>Valid User</param-value>
+  
+  </init-param>
+  <load-on-startup>5</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>haiServ</servlet-name>
+  <url-pattern>/login.com</url-pattern>
+  
+  </servlet-mapping>
+
+
+
+</web-app>

@@ -1,0 +1,50 @@
+
+<web-app >
+  <display-name>FiltersLab20a</display-name>
+
+  <welcome-file-list>
+
+    <welcome-file>index.html</welcome-file>
+  
+ </welcome-file-list>
+
+
+	<servlet>
+	<servlet-name>myServlet</servlet-name>
+	<servlet-class>com.sunny.filterchaining.HelloServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+
+	<servlet-name>myServlet</servlet-name>	
+	<url-pattern>/hello.FUCK</url-pattern>
+	
+	</servlet-mapping>
+
+
+	<filter>
+	<filter-name>loginFilter</filter-name>
+	<filter-class>com.sunny.filterchaining.LoginFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+
+	<filter-name>loginFilter</filter-name>	
+	<url-pattern>/hello.FUCK</url-pattern>
+	
+	</filter-mapping>
+
+
+
+	<filter>
+	<filter-name>authentFilter</filter-name>
+	<filter-class>com.sunny.filterchaining.AuthenticationFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+	
+	<filter-name>authentFilter</filter-name>
+	<url-pattern>/hello.FUCK</url-pattern>
+	</filter-mapping>
+
+</web-app>

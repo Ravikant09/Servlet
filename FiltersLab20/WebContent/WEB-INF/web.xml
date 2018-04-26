@@ -1,0 +1,55 @@
+
+<web-app>
+  <display-name>FiltersLab20</display-name>
+ 
+  <welcome-file-list>
+
+    <welcome-file>index.html</welcome-file>
+ 
+ </welcome-file-list>
+
+	<servlet>
+	<servlet-name>servlet1</servlet-name>
+	<servlet-class>com.sunny.filterchaining.HelloServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>servlet1</servlet-name>	
+	<url-pattern>/hello.sunny</url-pattern>
+	</servlet-mapping>
+
+	<filter>
+	<filter-name>filterA</filter-name>
+	<filter-class>com.sunny.filterchaining.FilterA</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	<filter-name>filterA</filter-name>
+	<url-pattern>/hello.sunny</url-pattern>
+	</filter-mapping>
+
+
+
+	<filter>
+	<filter-name>filterB</filter-name>
+	<filter-class>com.sunny.filterchaining.FilterB</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	<filter-name>filterB</filter-name>
+	<url-pattern>/hello.sunny</url-pattern>
+	</filter-mapping>
+
+
+
+	<filter>
+	<filter-name>filterC</filter-name>
+	<filter-class>com.sunny.filterchaining.FilterC</filter-class>
+	</filter>
+	
+	<filter-mapping>
+	<filter-name>filterC</filter-name>
+	<url-pattern>/hello.sunny</url-pattern>
+	</filter-mapping>
+
+</web-app>

@@ -1,0 +1,31 @@
+<web-app >
+  <display-name>ServletLab13</display-name>
+
+
+
+  <welcome-file-list>
+
+    <welcome-file>index.html</welcome-file>
+
+  </welcome-file-list>
+
+<context-param>
+<param-name>Country</param-name>
+<param-value>India</param-value>
+</context-param>
+
+
+<servlet>
+<servlet-name>myTestServlet</servlet-name>
+<servlet-class>com.sunny.servlets.TestServlet</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>myTestServlet</servlet-name>
+<url-pattern>/test.com</url-pattern>
+
+</servlet-mapping>
+
+</web-app>

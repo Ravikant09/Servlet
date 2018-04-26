@@ -1,0 +1,33 @@
+<web-app >
+  <display-name>ServletLab13</display-name>
+
+
+
+  <welcome-file-list>
+
+    <welcome-file>index.html</welcome-file>
+
+  </welcome-file-list>
+
+
+	<session-config>
+		<session-timeout>10</session-timeout>
+		
+		</session-config>
+
+
+
+<servlet>
+<servlet-name>myTestServlet</servlet-name>
+<servlet-class>com.sunny.servlets.TestServlet</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+
+<servlet-name>myTestServlet</servlet-name>
+<url-pattern>/test.com</url-pattern>
+
+</servlet-mapping>
+
+</web-app>

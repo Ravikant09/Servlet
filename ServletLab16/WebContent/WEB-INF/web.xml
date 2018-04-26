@@ -1,0 +1,21 @@
+<web-app >
+  <display-name>ServletLab16</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+<servlet>
+<servlet-name>MyServlet</servlet-name>
+<servlet-class>com.sunny.servlets.TestServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>MyServlet</servlet-name>
+<url-pattern>/test.sunny</url-pattern>
+</servlet-mapping>
+
+
+<session-config>
+<session-timeout>60</session-timeout>
+</session-config>
+</web-app>

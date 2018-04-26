@@ -1,0 +1,21 @@
+<web-app >
+
+  <display-name>ServletLab3</display-name>
+
+
+  <welcome-file-list>
+    <welcome-file>register.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  <servlet-name>registerServlet</servlet-name>
+  <servlet-class>com.sunny.registration.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+  <servlet-name>registerServlet</servlet-name>
+  <url-pattern>/register.jlc</url-pattern>
+  
+  </servlet-mapping>
+	
+</web-app>

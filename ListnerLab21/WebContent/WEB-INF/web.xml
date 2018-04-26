@@ -1,0 +1,48 @@
+<web-app>
+  <display-name>ListnerLab21</display-name>
+
+  <welcome-file-list>
+
+    <welcome-file>index.html</welcome-file>
+    
+</welcome-file-list>
+
+	<servlet>
+	<servlet-name>myServlet</servlet-name>
+	<servlet-class>com.sunny.listners.TestServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+
+	<servlet-name>myServlet</servlet-name>	
+	<url-pattern>/test.sunny</url-pattern>
+	
+	</servlet-mapping>
+
+<listener>
+<listener-class>com.sunny.listners.MyContextListener</listener-class>
+</listener>
+
+<listener>
+<listener-class>com.sunny.listners.MyContextAttributeListener</listener-class>
+</listener>
+
+<listener>
+<listener-class>com.sunny.listners.MySessionListener</listener-class>
+</listener>
+
+<listener>
+<listener-class>com.sunny.listners.MyRequestListener</listener-class>
+</listener>
+
+<listener>
+<listener-class>com.sunny.listners.MyRequestAttributeListeners</listener-class>
+</listener>
+
+<listener>
+<listener-class>com.sunny.listners.MyHttpSessionAttributeListener</listener-class>
+</listener>
+
+
+
+</web-app>

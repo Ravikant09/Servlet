@@ -1,0 +1,23 @@
+<web-app >
+  <display-name>ServletLab8</display-name>
+<welcome-file-list>
+  
+    <welcome-file>home.html</welcome-file>
+  
+  </welcome-file-list>
+
+<servlet>
+<servlet-name>HelloServlet</servlet-name>
+<servlet-class>com.sunny.servlets.HelloServlet</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>HelloServlet</servlet-name>
+<url-pattern>/home.com</url-pattern>
+
+
+</servlet-mapping>
+
+
+</web-app>

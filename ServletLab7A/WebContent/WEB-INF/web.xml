@@ -1,0 +1,23 @@
+<web-app>
+  <display-name>ServletLab7A</display-name>
+
+  <welcome-file-list>
+  
+    <welcome-file>login.html</welcome-file>
+  
+  </welcome-file-list>
+
+<servlet>
+<servlet-name>MyloginServlet</servlet-name>
+<servlet-class>com.sunny.servlets.LoginServlet</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>MyloginServlet</servlet-name>
+<url-pattern>/login.com</url-pattern>
+
+
+</servlet-mapping>
+
+</web-app>

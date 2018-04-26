@@ -1,0 +1,53 @@
+
+<web-app>
+  <display-name>FiltersLab17</display-name>
+  <welcome-file-list>
+
+    <welcome-file>index.html</welcome-file>
+    
+
+  </welcome-file-list>
+
+<servlet>
+
+<servlet-name>demoServlet</servlet-name>
+<servlet-class>com.sunny.servlets.DemoServlet</servlet-class>
+
+<init-param>
+
+<param-name>city</param-name>
+<param-value>Silchar</param-value>
+</init-param>
+
+</servlet>
+
+<servlet-mapping>
+<servlet-name>demoServlet</servlet-name>
+<url-pattern>/demo.sunny</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+<filter>
+
+<filter-name>demoFilter</filter-name>
+<filter-class>com.sunny.filters.DemoFilter</filter-class>
+
+<init-param>
+
+<param-name>city</param-name>
+<param-value>Bangalore</param-value>
+</init-param>
+
+</filter>
+
+<filter-mapping>
+
+<filter-name>demoFilter</filter-name>
+<url-pattern>/demo.sunny</url-pattern>
+
+</filter-mapping>
+
+</web-app>

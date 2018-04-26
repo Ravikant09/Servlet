@@ -1,0 +1,55 @@
+
+<web-app>
+  <display-name>ServletLab19</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   
+
+
+  </welcome-file-list>
+
+
+<servlet>
+
+<servlet-name>sevletA</servlet-name>
+<servlet-class>com.sunny.servletchaining.ServletA</servlet-class>
+
+</servlet>
+
+<servlet-mapping>
+
+<servlet-name>sevletA</servlet-name>
+<url-pattern>/a.sunny</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+
+<servlet-name>sevletB</servlet-name>
+<servlet-class>com.sunny.servletchaining.ServletB</servlet-class>
+
+</servlet>
+
+<servlet-mapping>
+
+<servlet-name>sevletB</servlet-name>
+<url-pattern>/b.sunny</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+
+<servlet-name>sevletC</servlet-name>
+<servlet-class>com.sunny.servletchaining.ServletC</servlet-class>
+
+</servlet>
+
+<servlet-mapping>
+
+<servlet-name>sevletC</servlet-name>
+<url-pattern>/c.sunny</url-pattern>
+</servlet-mapping>
+
+</web-app>
